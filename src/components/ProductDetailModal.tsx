@@ -62,9 +62,12 @@ Hello Sop Williams, I want to order this pair. Please confirm store pickup or de
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 lg:p-8 bg-black/90 backdrop-blur-md overflow-y-auto">
+    <div 
+      className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 lg:p-8 bg-black/90 backdrop-blur-md overflow-y-auto"
+      onClick={onClose}
+    >
       <div 
-        className="relative w-full max-w-4xl bg-[#101116] border border-white/15 rounded-xl shadow-[0_25px_70px_rgba(0,0,0,0.8)] overflow-hidden my-auto"
+        className="relative w-full max-w-4xl bg-[#101116] border border-white/15 rounded-xl shadow-[0_25px_70px_rgba(0,0,0,0.8)] overflow-hidden my-auto max-h-[92dvh] overflow-y-auto"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Top Dismiss Button */}

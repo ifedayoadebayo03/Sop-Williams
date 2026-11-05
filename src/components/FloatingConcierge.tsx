@@ -6,10 +6,10 @@ export const FloatingConcierge: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-6 z-40">
+    <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-40">
       {/* Popover Menu */}
       {isOpen && (
-        <div className="mb-3 w-72 bg-[#121318] border border-[#d4af37]/30 rounded-xl p-4 shadow-[0_15px_40px_rgba(0,0,0,0.8)] animate-in fade-in slide-in-from-bottom-2 duration-200">
+        <div className="mb-3 w-[calc(100vw-2rem)] sm:w-72 max-w-xs bg-[#121318] border border-[#d4af37]/30 rounded-xl p-4 shadow-[0_15px_40px_rgba(0,0,0,0.8)] animate-in fade-in slide-in-from-bottom-2 duration-200">
           <div className="flex items-center justify-between pb-3 border-b border-white/10 mb-3">
             <div>
               <span className="text-[10px] uppercase tracking-widest text-[#c5a880] font-semibold block">

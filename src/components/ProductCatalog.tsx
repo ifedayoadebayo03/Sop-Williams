@@ -221,8 +221,14 @@ export const ProductCatalog: React.FC<ProductCatalogProps> = ({
 
         {/* Quick Size Modal */}
         {quickSizeModal && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200">
-            <div className="w-full max-w-md bg-[#121318] border border-white/15 rounded-lg p-6 shadow-2xl relative">
+          <div 
+            className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/80 backdrop-blur-sm animate-in fade-in duration-200"
+            onClick={() => setQuickSizeModal(null)}
+          >
+            <div 
+              className="w-full max-w-md bg-[#121318] border border-white/15 rounded-lg p-5 sm:p-6 shadow-2xl relative"
+              onClick={(e) => e.stopPropagation()}
+            >
               <h4 className="font-display text-lg font-bold text-[#f5f4f0] mb-1">
                 Select Your Size
               </h4>
