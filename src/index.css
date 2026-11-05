@@ -55,3 +55,61 @@
   background: #c5a880;
 }
 
+/* Luxury Staggered Entrance Animations */
+@keyframes luxuryEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes luxuryScaleEntrance {
+  0% {
+    opacity: 0;
+    transform: scale(0.96) translateY(16px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes goldAuraGleam {
+  0%, 100% {
+    opacity: 0.25;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.06);
+  }
+}
+
+.animate-entrance-1 {
+  animation: luxuryEntrance 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both;
+}
+
+.animate-entrance-2 {
+  animation: luxuryEntrance 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both;
+}
+
+.animate-entrance-3 {
+  animation: luxuryEntrance 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+}
+
+.animate-entrance-4 {
+  animation: luxuryEntrance 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.55s both;
+}
+
+.animate-entrance-card {
+  animation: luxuryScaleEntrance 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s both;
+}
+
+.animate-aura {
+  animation: goldAuraGleam 6s ease-in-out infinite;
+}
+

@@ -64,7 +64,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   return (
     <section id="hero" className="relative w-full overflow-hidden bg-[#090a0c] pt-10 pb-16 lg:pt-16 lg:pb-24 border-b border-white/[0.08]">
       {/* Subtle Ambient Radial Glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-[#d4af37]/[0.035] blur-[140px] pointer-events-none rounded-full" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-[#d4af37]/[0.04] blur-[140px] pointer-events-none rounded-full animate-aura" />
       <div className="absolute top-0 right-0 w-[450px] h-[450px] bg-[#3a2f1b]/[0.08] blur-[120px] pointer-events-none rounded-full" />
 
       <div className="max-w-[1440px] mx-auto px-6 lg:px-12 relative z-10">
@@ -74,7 +74,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Left Column (Editorial & Action) */}
           <div className="lg:col-span-6 flex flex-col justify-center text-left">
             {/* Atelier Heritage Kicker (Clean unboxed typography) */}
-            <div className="flex items-center gap-2 text-xs uppercase tracking-[0.28em] text-[#c5a880] mb-4 font-medium flex-wrap">
+            <div className="flex items-center gap-2 text-xs uppercase tracking-[0.28em] text-[#c5a880] mb-4 font-medium flex-wrap animate-entrance-1">
               <span>SOP WILLIAMS</span>
               <span aria-hidden="true" className="opacity-40">·</span>
               <span>Broad Street, Mandilas</span>
@@ -83,17 +83,17 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
 
             {/* Display Headline */}
-            <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-[#f5f4f0] leading-[1.12] mb-6 [text-wrap:balance]">
+            <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight text-[#f5f4f0] leading-[1.12] mb-6 [text-wrap:balance] animate-entrance-2">
               Sculpted For Men Who Walk Like Kings.
             </h1>
 
             {/* Subtitle */}
-            <p className="text-base lg:text-lg text-[#b8b7b2] leading-relaxed max-w-xl mb-8 font-light">
+            <p className="text-base lg:text-lg text-[#b8b7b2] leading-relaxed max-w-xl mb-8 font-light animate-entrance-3">
               Nigeria’s pre-eminent luxury footwear house. From our flagship showroom on Broad Street in Mandilas, we craft hand-lasted exotic python, alligator-embossed calfskin, and architectural commando loafers.
             </p>
 
             {/* Action Buttons */}
-            <div className="flex flex-wrap items-center gap-4 mb-10">
+            <div className="flex flex-wrap items-center gap-4 mb-10 animate-entrance-4">
               <button
                 onClick={onExploreCollection}
                 className="flex items-center gap-3 px-6 py-3.5 text-xs lg:text-sm font-semibold tracking-wider uppercase text-black bg-[#d4af37] hover:bg-[#e4bf47] active:scale-95 rounded transition-all shadow-[0_4px_20px_rgba(212,175,55,0.2)] whitespace-nowrap cursor-pointer"
@@ -112,7 +112,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
 
             {/* Showroom Direct Info Strip */}
-            <div className="flex flex-wrap items-center gap-4 pt-6 border-t border-white/[0.08] text-xs text-[#a5a4a0]">
+            <div className="flex flex-wrap items-center gap-4 pt-6 border-t border-white/[0.08] text-xs text-[#a5a4a0] animate-entrance-4">
               <span className="text-[#c5a880] font-mono uppercase tracking-wider text-[11px]">Showroom:</span>
               <span className="font-mono text-xs text-[#f5f4f0]">
                 Santak Plaza, Broad Street
@@ -126,7 +126,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </div>
 
           {/* Right Column: Architectural Hero Showcase */}
-          <div className="lg:col-span-6">
+          <div className="lg:col-span-6 animate-entrance-card">
             <div className="relative rounded-lg border border-white/[0.12] bg-[#121318] p-4 lg:p-6 shadow-[0_20px_50px_rgba(0,0,0,0.6)] group">
               
               {/* Top Tag & Price Bar */}

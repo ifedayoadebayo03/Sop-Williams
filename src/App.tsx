@@ -9,6 +9,7 @@ import { ConciergeSection } from './components/ConciergeSection';
 import { Footer } from './components/Footer';
 import { CartDrawer, CartItem } from './components/CartDrawer';
 import { ProductDetailModal } from './components/ProductDetailModal';
+import { EntranceCurtain } from './components/EntranceCurtain';
 import { FloatingConcierge } from './components/FloatingConcierge';
 import { Currency, PRODUCTS, Product } from './data/products';
 
@@ -90,6 +91,9 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-[#090a0c] text-[#e6e4dc] selection:bg-[#c5a880] selection:text-black font-sans antialiased">
+      {/* Cinematic Luxury Entrance Animation */}
+      <EntranceCurtain />
+
       {/* Toast Notification */}
       {toastMessage && (
         <div className="fixed top-24 right-6 z-50 bg-[#14161f] border border-[#d4af37]/60 text-[#f5f4f0] px-4 py-2.5 rounded-lg shadow-2xl text-xs font-medium flex items-center gap-2.5 animate-in slide-in-from-top-2 duration-200">
