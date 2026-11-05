@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-bodoni: 'Bodoni Moda', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #090a0c;
+    color: #e6e4dc;
+  }
+}
+
+.font-display {
+  font-family: var(--font-cinzel), serif;
+}
+
+.font-editorial {
+  font-family: var(--font-bodoni), serif;
+}
+
+/* Subtle luxury gold foil border & glow */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F3E7C4 0%, #D4AF37 50%, #AA7C11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border-color: rgba(212, 175, 55, 0.22);
+}
+
+.gold-border-subtle {
+  border-color: rgba(212, 175, 55, 0.12);
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090a0c;
+}
+::-webkit-scrollbar-thumb {
+  background: #23252b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a880;
+}
+
